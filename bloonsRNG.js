@@ -1,5 +1,18 @@
 `use strict`
-//Here you can get a random setup with your towers.
+
+//CSS
+var root_css = document.querySelector(':root');
+
+function myFunction_get() {
+  // Get the styles (properties and values) for the root
+  var root_css_styles = getComputedStyle(root_css);
+}
+
+function myFunction_set() {
+  // Set the value of variable --blue to another value (in this case "lightblue")
+  root_css.style.setProperty('--blue', 'lightblue');
+}
+
 let styling = document.getElementById("heroDIV")
 
 heroButton.addEventListener("click", function () {
@@ -11,6 +24,12 @@ heroButton.addEventListener("click", function () {
 
     console.log('smirk')
 })
+
+// if () {
+    Quincy.addEventListener("click", function () {
+        document.getElementById("Quincy").style.backgroundColor = 'blue';
+    })
+// }
 
 //Arrays
 let heroArray = ['Quincy', 'Gwendolin', 'Striker', 'Obyn', 'Geraldo', 'Churchill', 'Ben', 'Ezilli', 'Fusty', 'Adora', 'Brickell', 'Etienne', 'Sauda', 'PSI']

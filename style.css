@@ -1,21 +1,21 @@
 :root {
-    --green: #54de00;
-    --dark-green: #3cb500;
-    --brown: #b07b44;
-    --dark-brown: #9f7843;
+    --green: 84, 222, 0;
+    --dark-green: 60, 181, 0;
+    --brown: 176, 123, 68;
+    --dark-brown: 159, 120, 67;
 
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* General */
 html {
-    background-color: var(--brown);
+    background-color: rgb(var(--brown), 1);
 }
 
 /* Nav */
 nav {
-    border: solid var(--dark-green) 5px;
-    background-color: var(--green);
+    border: solid rgb(var(--dark-green), 1) 5px;
+    background-color: rgb(var(--green), 1);
     /* padding: 1% 1% 1% 1%; */
     font-size: large;
 
@@ -47,8 +47,8 @@ main {
     margin: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    border: solid var(--dark-green) 5px;
-    background-color: var(--green);
+    border: solid rgb(var(--dark-green), 1) 5px;
+    background-color: rgb(var(--green), 1);
     /* padding: 25px; */
 }
 
@@ -64,7 +64,7 @@ h2, p{
 #heroDIV{
     display: none;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 #heroDIV img{
@@ -74,14 +74,15 @@ h2, p{
 
 #heroDIV button{
     border-radius: 10%;
-    border: 5px solid var(--dark-brown);
-    background-color: var(--brown);
+    border: 5px solid rgb(var(--dark-brown), 0.5);
+    background-color: rgb(var(--brown), 0.5);
+    margin-top: 1%;
 }
 
-#heroDIV button :hover{
+#heroDIV button:hover{
     border-radius: 10%;
-    border: 5px solid var(--dark-brown);
-    background-color: var(--brown);
+    border: 5px solid rgb(var(--dark-brown), 1);
+    background-color: rgb(var(--brown), 1);
 }
 
 .dropdown{
@@ -104,8 +105,8 @@ h2, p{
 
 /* Footer */
 footer {
-    border: solid var(--dark-green) 5px;
-    background-color: var(--green);
+    border: solid rgb(var(--dark-green), 1) 5px;
+    background-color: rgb(var(--green), 1);
     padding: 1% 1% 1% 1%;
     font-size: large;
 }
