@@ -1,0 +1,115 @@
+:root {
+    --green: #54de00;
+    --dark-green: #3cb500;
+    --brown: #b07b44;
+    --dark-brown: #9f7843;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General */
+html {
+    background-color: var(--brown);
+}
+
+/* Nav */
+nav {
+    border: solid var(--dark-green) 5px;
+    background-color: var(--green);
+    /* padding: 1% 1% 1% 1%; */
+    font-size: large;
+
+}
+
+.nav {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.nav h1 {
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+.nav a {
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+/* Main */
+main {
+    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: solid var(--dark-green) 5px;
+    background-color: var(--green);
+    /* padding: 25px; */
+}
+
+h2, p{
+    text-align: center;
+}
+
+.br{
+    padding: 3px;
+    background-color: black;
+}
+
+#heroDIV{
+    display: none;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#heroDIV img{
+    width: 100px;
+    height: 100px;
+}
+
+#heroDIV button{
+    border-radius: 10%;
+    border: 5px solid rgba(var(--dark-brown), 0.8);
+    background-color: rgba(var(--brown), 1);
+}
+
+#heroDIV button :hover{
+    border-radius: 10%;
+    border: 5px solid rgba(var(--dark-brown), 1);
+    background-color: rgba(var(--brown), 0.8);
+}
+
+.dropdown{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding-left: 47%;
+    padding-right: 47%;
+}
+
+.dropdown h2, button{
+    flex: 1;
+    text-align: center;
+}
+
+.dropdown button{
+    padding-top: 3%;
+    all: unset;
+}
+
+/* Footer */
+footer {
+    border: solid var(--dark-green) 5px;
+    background-color: var(--green);
+    padding: 1% 1% 1% 1%;
+    font-size: large;
+}
+
+footer div {
+    text-align: center;
+}
