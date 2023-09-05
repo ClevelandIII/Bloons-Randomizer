@@ -74,14 +74,14 @@ h2, p{
 
 #heroDIV button{
     border-radius: 10%;
-    border: 5px solid rgba(var(--dark-brown), 0.8);
-    background-color: rgba(var(--brown), 1);
+    border: 5px solid var(--dark-brown);
+    background-color: var(--brown);
 }
 
 #heroDIV button :hover{
     border-radius: 10%;
-    border: 5px solid rgba(var(--dark-brown), 1);
-    background-color: rgba(var(--brown), 0.8);
+    border: 5px solid var(--dark-brown);
+    background-color: var(--brown);
 }
 
 .dropdown{
