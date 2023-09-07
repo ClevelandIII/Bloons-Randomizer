@@ -106,6 +106,16 @@ h2, p{
     padding-right: 39%;
 }
 
+#magicspace{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+#supportspace{
+    padding-left: 39%;
+    padding-right: 39%;
+}
+
 .dropdown h2, button{
     flex: 1;
     text-align: center;
