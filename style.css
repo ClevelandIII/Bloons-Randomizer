@@ -126,6 +126,21 @@ h2, p{
     all: unset;
 }
 
+#random{
+    all: unset;
+    border: 5px solid rgb(var(--dark-green), 1);
+    background-color: rgb(var(--green), 1);
+    border-radius: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+}
+
+#center{
+    text-align: center;
+    margin-top: 1%;
+}
+
 /* Footer */
 footer {
     border: solid rgb(var(--dark-green), 1) 5px;

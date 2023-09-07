@@ -74,6 +74,10 @@ function takeTower(id) {
     }
 }
 
+function submitData() {
+    
+}
+
 //Arrays
 // let heroArray = ['Quincy', 'Gwendolin', 'Striker', 'Obyn', 'Geraldo', 'Churchill', 'Ben', 'Ezilli', 'Fusty', 'Adora', 'Brickell', 'Etienne', 'Sauda', 'PSI']
 // let primaryArray = ['Dart', 'Boomerang', 'Bomb', 'Tack', 'Ice', 'Glue']

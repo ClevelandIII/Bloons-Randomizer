@@ -176,7 +176,12 @@
                         alt="BeastHandler"></button>
             </div>
         </section>
-        <div>Rando</div>
+        <div id="center">
+            <input type="text" id="towers" name="towers" required minlength="1" maxlength="2" placeholder="Enter Tower Count"/>
+            <p>With your hero and towers selected, enter your desired number of towers (if one is entered, only the hero will be randomized) and hit randomize.</p>
+            <button type="button" id="random" onclick="submitData()">
+            <p>Randomize!</p></button>
+        </div>
     </main>
     <footer>
         <div>Footer</div>
