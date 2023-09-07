@@ -27,10 +27,10 @@
             <p>Welcome! This is a auto updating randomizer for bloons td 6, battles 2 and monkey city. To start, select
                 your parameters to decide who/what you want to include, and randomize to get your setup.</p>
         </div>
-        <div>
-            <div class="dropdown">
+        <section class="hero">
+            <div class="dropdown" id="herospace">
                 <h2>Hero</h2>
-                <button id="heroButton">
+                <button id="hero" onclick="dropdown(id)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                         <path
@@ -39,25 +39,93 @@
                 </button>
             </div>
             <div class="br"></div>
-            <div id="heroDIV">
-                <button type="button" id="Quincy"><img src="images/QuincyPortrait.webp" alt="Quincy"></button>
-                <button type="button"><img src="images/GwendolinPortrait.webp" alt="Gwendolin"></button>
-                <button type="button"><img src="images/StrikerJonesPortrait.webp" alt="StrikerJones"></button>
-                <button type="button"><img src="images/ObynGreenFootPortrait.webp" alt="ObynGreenFoot"></button>
-                <button type="button"><img src="images/CaptainChurchillPortrait.webp" alt="CaptainChurchill"></button>
-                <button type="button"><img src="images/BenjaminPortrait.webp" alt="Benjamin"></button>
-                <button type="button"><img src="images/EziliPortrait.webp" alt="Ezili"></button>
-                <button type="button"><img src="images/PatFustyPortrait.webp" alt="PatFusty"></button>
-                <button type="button"><img src="images/AdoraPortrait.webp" alt="Adora"></button>
-                <button type="button"><img src="images/AdmiralBrickellPortrait.webp" alt="AdmiralBrickell"></button>
-                <button type="button"><img src="images/EtiennePortrait.webp" alt="Etienne"></button>
-                <button type="button"><img src="images/SaudaPortrait.webp" alt="Sauda"></button>
-                <button type="button"><img src="images/PsiPortrait.webp" alt="Psi"></button>
-                <button type="button"><img src="images/GeraldoPortrait.webp" alt="Geraldo"></button>
+            <div class="contained" id="heroContained">
+                <button type="button" id="Quincy" onclick="takeHero(id)"><img src="images/QuincyPortrait.webp"
+                        alt="Quincy"></button>
+                <button type="button" id="Gwendolin" onclick="takeHero(id)"><img src="images/GwendolinPortrait.webp"
+                        alt="Gwendolin"></button>
+                <button type="button" id="StrikerJones" onclick="takeHero(id)"><img
+                        src="images/StrikerJonesPortrait.webp" alt="StrikerJones"></button>
+                <button type="button" id="ObynGreenFoot" onclick="takeHero(id)"><img
+                        src="images/ObynGreenFootPortrait.webp" alt="ObynGreenFoot"></button>
+                <button type="button" id="CaptainChurchill" onclick="takeHero(id)"><img
+                        src="images/CaptainChurchillPortrait.webp" alt="CaptainChurchill"></button>
+                <button type="button" id="Benjamin" onclick="takeHero(id)"><img src="images/BenjaminPortrait.webp"
+                        alt="Benjamin"></button>
+                <button type="button" id="Ezili" onclick="takeHero(id)"><img src="images/EziliPortrait.webp"
+                        alt="Ezili"></button>
+                <button type="button" id="PatFusty" onclick="takeHero(id)"><img src="images/PatFustyPortrait.webp"
+                        alt="PatFusty"></button>
+                <button type="button" id="Adora" onclick="takeHero(id)"><img src="images/AdoraPortrait.webp"
+                        alt="Adora"></button>
+                <button type="button" id="AdmiralBrickell" onclick="takeHero(id)"><img
+                        src="images/AdmiralBrickellPortrait.webp" alt="AdmiralBrickell"></button>
+                <button type="button" id="Etienne" onclick="takeHero(id)"><img src="images/EtiennePortrait.webp"
+                        alt="Etienne"></button>
+                <button type="button" id="Sauda" onclick="takeHero(id)"><img src="images/SaudaPortrait.webp"
+                        alt="Sauda"></button>
+                <button type="button" id="Psi" onclick="takeHero(id)"><img src="images/PsiPortrait.webp"
+                        alt="Psi"></button>
+                <button type="button" id="Geraldo" onclick="takeHero(id)"><img src="images/GeraldoPortrait.webp"
+                        alt="Geraldo"></button>
             </div>
-        </div>
-        <div>Primary</div>
-        <div>Military</div>
+        </section>
+        <section class="primary">
+            <div class="dropdown" id="primaryspace">
+                <h2>Primary Towers</h2>
+                <button id="primary" onclick="dropdown(id)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="br"></div>
+            <div class="contained" id="primaryContained">
+                <button type="button" id="DartMonkey" onclick="takeTower(id)"><img src="images/000-DartMonkey.webp"
+                        alt="DartMonkey"></button>
+                <button type="button" id="BoomerangMonkey" onclick="takeTower(id)"><img
+                        src="images/000-BoomerangMonkey.webp" alt="BoomerangMonkey"></button>
+                <button type="button" id="BombShooter" onclick="takeTower(id)"><img src="images/000-BombShooter.webp"
+                        alt="BombShooter"></button>
+                <button type="button" id="TackShooter" onclick="takeTower(id)"><img src="images/000-TackShooter.webp"
+                        alt="TackShooter"></button>
+                <button type="button" id="IceMonkey" onclick="takeTower(id)"><img src="images/000-IceMonkey.webp"
+                        alt="IceMonkey"></button>
+                <button type="button" id="GlueGunner" onclick="takeTower(id)"><img src="images/000-GlueGunner.webp"
+                        alt="GlueGunner"></button>
+            </div>
+        </section>
+        <section class="military">
+            <div class="dropdown" id="militaryspace">
+                <h2>Military Towers</h2>
+                <button id="military" onclick="dropdown(id)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="br"></div>
+            <div class="contained" id="militaryContained">
+                <button type="button" id="SniperMonkey" onclick="takeTower(id)"><img src="images/000-SniperMonkey.webp"
+                        alt="SniperMonkey"></button>
+                <button type="button" id="MonkeySub" onclick="takeTower(id)"><img src="images/000-MonkeySub.webp"
+                        alt="MonkeySub"></button>
+                <button type="button" id="MonkeyBuccaneer" onclick="takeTower(id)"><img
+                        src="images/000-MonkeyBuccaneer.webp" alt="MonkeyBuccaneer"></button>
+                <button type="button" id="MonkeyAce" onclick="takeTower(id)"><img src="images/000-MonkeyAce.webp"
+                        alt="MonkeyAce"></button>
+                <button type="button" id="HeliPilot" onclick="takeTower(id)"><img src="images/000-HeliPilot.webp"
+                        alt="HeliPilot"></button>
+                <button type="button" id="MortarMonkey" onclick="takeTower(id)"><img src="images/000-MortarMonkey.webp"
+                        alt="MortarMonkey"></button>
+                <button type="button" id="DartlingGunner" onclick="takeTower(id)"><img src="images/000-DartlingGunner.webp"
+                        alt="DartlingGunner"></button>
+            </div>
+        </section>
         <div>Magic</div>
         <div>Support</div>
         <div>Rando</div>

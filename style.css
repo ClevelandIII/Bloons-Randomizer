@@ -61,25 +61,25 @@ h2, p{
     background-color: black;
 }
 
-#heroDIV{
+.contained{
     display: none;
     text-align: center;
     margin-top: 1%;
 }
 
-#heroDIV img{
+.contained img{
     width: 100px;
     height: 100px;
 }
 
-#heroDIV button{
+.contained button{
     border-radius: 10%;
     border: 5px solid rgb(var(--dark-brown), 0.5);
     background-color: rgb(var(--brown), 0.5);
     margin-top: 1%;
 }
 
-#heroDIV button:hover{
+.contained button:hover{
     border-radius: 10%;
     border: 5px solid rgb(var(--dark-brown), 1);
     background-color: rgb(var(--brown), 1);
@@ -89,8 +89,21 @@ h2, p{
     position: relative;
     overflow: hidden;
     display: flex;
+}
+
+#herospace{
     padding-left: 47%;
     padding-right: 47%;
+}
+
+#primaryspace{
+    padding-left: 39%;
+    padding-right: 39%;
+}
+
+#militaryspace{
+    padding-left: 39%;
+    padding-right: 39%;
 }
 
 .dropdown h2, button{
