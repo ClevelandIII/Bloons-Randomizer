@@ -29,6 +29,7 @@ function dropdown(id) {
 //Button Onclick
 let heroArray = [];
 let towerArray = []
+let numRandom = 0
 
 function takeHero(id) {
     let change = document.getElementById(id)
@@ -74,31 +75,42 @@ function takeTower(id) {
     }
 }
 
-function submitData() {
-    
+function num(value) {
+    numRandom = value
 }
 
-//Arrays
-// let heroArray = ['Quincy', 'Gwendolin', 'Striker', 'Obyn', 'Geraldo', 'Churchill', 'Ben', 'Ezilli', 'Fusty', 'Adora', 'Brickell', 'Etienne', 'Sauda', 'PSI']
-// let primaryArray = ['Dart', 'Boomerang', 'Bomb', 'Tack', 'Ice', 'Glue']
-// let militaryArray = ['Sniper', 'Sub', 'Buccaneer', 'Ace', 'Heli', 'Mortar', 'Dartling']
-// let magicArray = ['Wizard', 'Super', 'Ninja', 'Alchemist', 'Druid']
-// let supportArray = ['Banana Farm', 'Spike', 'Villiage', 'Engi', 'Beast Handler']
+//Submit
+let finalBox = document.getElementById("endBox")
+let finalText = document.getElementById("endDialogue")
+let numTowers;
 
-//RNG
-// let heroNum = Math.floor(Math.random() * 13)
-// let primaryNum = Math.floor(Math.random() * 5)
-// let militaryNum = Math.floor(Math.random() * 6)
-// let magicNum = Math.floor(Math.random() * 4)
-// let supportNum = Math.floor(Math.random() * 4)
-// console.log(heroNum, primaryNum, militaryNum, magicNum, supportNum)
+function submitData() {
+    if (heroArray.length >= 1) {
+        numTowers = towerArray.length + 1;
+    } else {
+        numTowers = towerArray.length
+    }
 
-// //Set RNG
-// let hero = heroArray[heroNum]
-// let primary = primaryArray[primaryNum]
-// let military = militaryArray[militaryNum]
-// let magic = magicArray[magicNum]
-// let support = supportArray[supportNum]
+    console.log(numTowers)
 
-// //Grabber
-// console.log(`Your hero  is ${hero}. Your four towers are ${primary}, ${military}, ${magic} and ${support}`)
+    if (numRandom != 0 && numRandom != "" && numRandom != " ") {
+        finalBox.style.display = "block"
+
+        if (numRandom < numTowers) {
+            if(heroArray.length > 0){
+                heroRNG = Math.floor(Math.random() )
+            }
+            for (i = 0; i > 1; i++) {
+                let RNG = Math.floor(Math.random() * numRandom)
+            }
+
+            finalText.textContent = `You selected ${heroArray.length + towerArray.length} towers and your ${numTowers} towers are ${Math}`
+        }
+    } else {
+        finalBox.style.display = "block"
+
+        if (numRandom > numTowers) {
+            finalText.textContent = "Yeah nah"
+        }
+    }
+}
