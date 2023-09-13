@@ -83,6 +83,7 @@ h2, p{
     border-radius: 10%;
     border: 5px solid rgb(var(--dark-brown), 1);
     background-color: rgb(var(--brown), 1);
+    cursor: pointer;
 }
 
 .dropdown{
@@ -92,28 +93,28 @@ h2, p{
 }
 
 #herospace{
-    padding-left: 47%;
-    padding-right: 47%;
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 #primaryspace{
-    padding-left: 39%;
-    padding-right: 39%;
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 #militaryspace{
-    padding-left: 39%;
-    padding-right: 39%;
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 #magicspace{
-    padding-left: 40%;
-    padding-right: 40%;
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 #supportspace{
-    padding-left: 39%;
-    padding-right: 39%;
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 .dropdown h2, button{
@@ -128,15 +129,35 @@ h2, p{
 
 #random{
     all: unset;
-    border: 5px solid rgb(var(--dark-green), 1);
-    background-color: rgb(var(--green), 1);
+    border: 5px solid rgb(var(--dark-green), 0.5);
+    background-color: rgb(var(--green), 0.5);
     border-radius: 20%;
     padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 1%;
+    outline: 5px solid rgb(255, 255, 255, 1);
 }
 
-button{
+#random:hover{
+    border: 5px solid rgb(var(--dark-green), 1);
+    background-color: rgb(var(--dark-green), 0.1);
+    outline: 5px solid rgb(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+#hero:hover{
+    cursor: pointer;
+}
+#primary:hover{
+    cursor: pointer;
+}
+#military:hover{
+    cursor: pointer;
+}
+#magic:hover{
+    cursor: pointer;
+}
+#support:hover{
     cursor: pointer;
 }
 

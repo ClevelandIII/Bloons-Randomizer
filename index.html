@@ -1,7 +1,7 @@
 <head>
     <meta charset="UFT-8">
     <meta name="author" content="Cleveland Williams">
-    <meta name="description" content="Description of website">
+    <meta name="description" content="Bloons Randomizer">
 
     <meta property="og:image" content="Url to an image">
     <meta property="og:title" content="Title Here">
@@ -16,9 +16,9 @@
     <nav>
         <div class="nav">
             <h1>Bloons Randomizer</h1>
-            <a href="">BTD 6</a>
-            <a href="">Battles 2</a>
-            <a href="">Monkey City</a>
+            <a href="#">BTD 6</a>
+            <a href="battles.html">Battles 2</a>
+            <a href="bmc.html">Monkey City</a>
         </div>
 
     </nav>
@@ -178,7 +178,7 @@
         </section>
         <div id="center">
             <input type="text" id="towers" name="towers" required minlength="1" maxlength="2"
-                placeholder="Enter Tower Count" onchange="num(value)" />
+                placeholder="Enter Tower Count" value="0" onchange="num(value)" />
             <p>With your hero and towers selected, enter your desired number of towers (if one is entered, only the hero
                 will be randomized) and hit randomize.</p>
             <button type="button" id="random" onclick="submitData()">
@@ -188,7 +188,7 @@
         <div id="endBox">
             <p id="endDialogue"></p>
         </div>
-    </main>
+    </main> 
     <footer>
         <div>Footer</div>
     </footer>
